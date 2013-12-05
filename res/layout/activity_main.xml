@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:gravity="left"
+        android:text="Resultado: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/valora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/valorb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/animacion"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:orientation = "horizontal"    
+    />
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:content="@+id/content"
+        android:handle="@+id/handle" 
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Operaciones" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/contenedor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/division"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="/" />
+
+                <Button
+                    android:id="@+id/multiplicacion"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="*" />
+
+                <Button
+                    android:id="@+id/suma"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/resta"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="-" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </SlidingDrawer>
+
+</LinearLayout>
