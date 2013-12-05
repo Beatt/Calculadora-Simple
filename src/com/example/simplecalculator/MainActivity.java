@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 /*
  * Programa: SimpleCalculator
- * Objetivo: Crear una calculadora extendiendo de View
+ * Objetivo: Crear una calculadora e implementando una vista.
  * Fecha: 4/12/13
  * Autor: Jiménez M. G. G.
  */
