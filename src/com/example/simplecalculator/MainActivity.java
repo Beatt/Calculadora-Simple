@@ -16,6 +16,7 @@ import android.widget.TextView;
  * Fecha: 4/12/13
  * Autor: Jiménez M. G. G.
  */
+
 public class MainActivity extends Activity implements OnClickListener {
 	
 	private Animacion animacion;
