@@ -101,7 +101,6 @@ public class MainActivity extends Activity implements OnClickListener {
 		{
 			resultado.setText("");
 			
-			
 			double valorA = Double.parseDouble(numeroA.getText().toString());
 			double valorB = Double.parseDouble(numeroB.getText().toString());
 			
