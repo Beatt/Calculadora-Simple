@@ -101,8 +101,9 @@ public class MainActivity extends Activity implements OnClickListener {
 		{
 			resultado.setText("");
 			
-			int valorA = Integer.parseInt(numeroA.getText().toString());
-			int valorB = Integer.parseInt(numeroB.getText().toString());
+			
+			double valorA = Double.parseDouble(numeroA.getText().toString());
+			double valorB = Double.parseDouble(numeroB.getText().toString());
 			
 			//Id presiona es igual a suma, resta, división o multiplicación.
 			if(v.getId() == R.id.suma)
